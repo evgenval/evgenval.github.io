@@ -1,15 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>СДНФ</title>
-<script src="code.js"></script>
-</head>
-<body>
-<label for="FirstLine">Формула логики высказываний:</label>
-<input type="text" id="FirstLine" placeholder=""/> <br>
-<button id="Start" onclick="readInput()">Проверить</button>
-<div id="Inf"></div>
-</body>
+    <head>
+        <!--Определение метаданных страницы: контент, кодировка-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!--Определение титульного названия страницы-->
+        <title>СДНФ</title>
+        
+    </head>
+
+    <!--Подключение выполняемого javascript скрипта-->
+    <script src="script.js"></script>
+
+    <body>
+        <div class="dorova">
+		  <div class="centered">
+            <h3>Формула логики высказываний:</h3>
+
+
+            <form>
+                <input type="text" id="formula" placeholder="Введите формулу..." required>
+                <input type="button" value="проверить" onclick="run()">
+            </form>
+
+            <br>
+
+            <!--Ответ: является ли строка формулой логики высказываний-->
+            <span id="answer1"></span>
+
+           
+        </div>
+            </div>
+    </body>
 </html>
